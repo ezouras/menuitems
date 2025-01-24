@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FilterItemComponent } from './filter-item.component';
+import { FilterItemComponent } from './form-item.component';
 
 describe('FilterItemComponent', () => {
   let component: FilterItemComponent;
@@ -8,9 +8,8 @@ describe('FilterItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FilterItemComponent]
-    })
-    .compileComponents();
+      imports: [FilterItemComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(FilterItemComponent);
     component = fixture.componentInstance;

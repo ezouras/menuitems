@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
-export interface Filter {
+export interface FormItem {
   name: string;
   type: any;
   data?: any;
 }
 
 @Injectable({ providedIn: 'root' })
-export class FilterService {
+export class FormService {
   constructor() {}
 
-  getFilters(): Filter[] {
+  getFormItems(): FormItem[] {
     return [
       { name: 'Name:', type: 'input' },
       {

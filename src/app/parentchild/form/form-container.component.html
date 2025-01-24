@@ -1,0 +1,6 @@
+<div>
+  @for(formItem of formItems;track formItem.name){
+    <app-form-item [formItem]="formItem" (filterChange)="onFilterChange($event)"></app-form-item>
+  }
+</div>
+
